@@ -16,3 +16,18 @@ return collection.every((e,i)=>{
 
 truthCheck([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");
 
+//this needs to be fixed
+function addTogether(num1,num2) {
+if (typeof(num1)=='number'){
+  if (typeof(num2) == 'number'){
+    return num1+num2
+  }
+  else if(!num2 ){
+    return function(newnum){return newnum+num1}}
+       else{return undefined}
+}
+else {return undefined}
+
+}
+
+addTogether(2,[3] )
