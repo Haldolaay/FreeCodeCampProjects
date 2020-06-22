@@ -31,3 +31,19 @@ else {return undefined}
 }
 
 addTogether(2,[3] )
+function palindrome(str) {
+  let regex = /[^a-zA-Z0-9]/;
+  let arr = str.toLowerCase().split('').filter(item=>!regex.test(item))
+
+  for(var i =0, k = arr.length-1; i<=k ; i++,k--){
+    if (arr[i] != arr[k]) return false
+
+  }
+  return true;
+
+}
+
+
+
+palindrome("My age is 0, 0 si ega ym.")
+
