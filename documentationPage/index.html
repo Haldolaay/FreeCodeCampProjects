@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel = "stylesheet" href = "style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>MENU</header>
+        <a class="nav-link" href = "#topic1">topic1</a>
+        <a class="nav-link" href = "#topic2">topic2</a>
+        <a class="nav-link" href = "#topic3">topic3</a>
+        <a class="nav-link" href = "#topic4">topic4</a>
+        <a class="nav-link" href = "#topic5">topic5</a>
+
+    </nav>
+    <main id="main-doc">
+        <section id= "topic1"class="main-section">
+            <header>Topic1</header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </section>
+        <section id="topic2"class="main-section">
+            <header>Topic2</header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </section>
+        <section id="topic3" class="main-section">
+            <header>Topic3</header>
+            <p><code>Lorem ipsum dolor sit amet consectetur adipisicing elit</code></p>
+            <p><code>Lorem ipsum dolor sit amet consectetur adipisicing elit</code></p>
+            <p><code>Lorem ipsum dolor sit amet consectetur adipisicing elit</code></p>
+            <pre>
+
+                #include<iostream>
+                    #include<fstream>
+                    
+                    using namespace std;
+                    
+                    int main() {
+                    
+                     ifstream myReadFile;
+                     myReadFile.open("text.txt");
+                     char output[100];
+                     if (myReadFile.is_open()) {
+                     while (!myReadFile.eof()) {
+                         
+                             myReadFile >> output;
+                             cout<< output;
+                            }
+                        }
+                        myReadFile.close();
+                        return 0;
+                    }
+                         
+                         
+                    
+            </pre>
+        </section>
+        <section id="topic4" class="main-section">
+            <header>Topic4</header>
+            <p>Lorem <code>ipsum dolor </code>sit amet consectetur adipisicing elit</p>
+            <p>Lorem <code>ipsum dolor </code> sit amet consectetur adipisicing elit</p>
+            <code class="">hello this is code part</code>
+        </section>
+        <section id="topic5" class="main-section">
+            <header>Topic5</header>
+            <p>something to look at later</p>
+           <code>
+            Consider a sequence u where u is defined as follows:
+
+            The number u(0) = 1 is the first one in u.
+            For each x in u, then y = 2 * x + 1 and z = 3 * x + 1 must be in u too.
+            There are no other numbers in u.
+            Ex: u = [1, 3, 4, 7, 9, 10, 13, 15, 19, 21, 22, 27, ...]
+            
+            1 gives 3 and 4, then 3 gives 7 and 10, 4 gives 9 and 13, then 7 gives 15 and 22 and so on...
+            
+            Task:
+            Given parameter n the function dbl_linear (or dblLinear...) returns the element u(n) of the ordered (with <) sequence u (so, there are no duplicates).
+            
+            Example:
+            dbl_linear(10) should return 22
+            
+            Note:
+            Focus attention on efficiency
+           </code>
+        </section>
+    </main>
+</body>
+</html>

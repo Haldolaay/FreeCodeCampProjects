@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  display: grid;
+  /* grid-template-columns: 15% auto; */
+}
+header {
+  text-align: center;
+}
+#navbar {
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  background: grey;
+  border-left: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  border-top: 1px solid black;
+  height: 5px;
+}
+
+a:hover {
+  opacity: 0.4;
+}
+#main-doc {
+  position: relative;
+  left: 400px;
+  width: 400px;
+  float: right;
+  text-align: center;
+}
+#main-doc header {
+  text-align: left;
+  font-size: xx-large;
+}
+@media only screen and(min-width: 700px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
